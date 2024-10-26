@@ -17,7 +17,7 @@ const comments = [];
 app.post('/submit-comment', (req, res) => {
   const { name, comment } = req.body;
   comments.push({ name, comment });
-  res.redirect('/comment.html'); // Redirecting the User back to the comment form
+  res.redirect('/caricature.html'); // Redirecting the User back to the comment form
 });
 
 app.get('/comments', (req, res) => {

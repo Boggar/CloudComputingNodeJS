@@ -15,14 +15,33 @@
   <body>
     <ul id="navbar">
       <a href="index.html">Home</a>
-      <a href="comment.html">Kommentare schreiben</a>
-      <a href="comment_section.html">Kommentare ansehen</a>
+      <a href="caricature.html">Today's Caricature</a>
+      <a href="comment_section.html">Discussion</a>
       <a href="aboutus.html">About Us</a>
     </ul>
+    <p></p>
     <div id="commentsSection">
-      <h1>Comments</h1>
+      <div id="guidelines">
+        <p>
+          This forum is a space for sharing ideas, asking questions, and
+          engaging in thoughtful discussions. Whether you’re looking to seek
+          advice, share your expertise, or connect with others who share your
+          interests, you’re in the right place! Please follow the following
+          rules.
+        </p>
+        <ul id="rule-list">
+          <li><strong>Be Respectful</strong></li>
+          <li><strong>Stay on Topic</strong></li>
+          <li><strong>No Spam or Self-Promotion</strong></li>
+        </ul>
+      </div>
     </div>
   </body>
+  <footer id="footer">
+    <ul id="footer-links">
+      <p>&copy; Dailycure</p>
+    </ul>
+  </footer>
 </html>
 
 <script>
@@ -33,6 +52,7 @@
       const commentsSection = document.getElementById("commentsSection");
       data.forEach((comment) => {
         const commentDiv = document.createElement("div");
+        commentDiv.className = "comment-box"; // Klasse für die Kommentarbox
         commentDiv.innerHTML = `<strong>${comment.name}</strong>: ${comment.comment}`;
         commentsSection.appendChild(commentDiv);
       });

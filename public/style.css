@@ -1,8 +1,15 @@
 * {
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /*Navbar styling*/
 #navbar {
+  position: static;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -17,7 +24,7 @@
 #navbar a {
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 10px 15px;
   display: block;
 }
@@ -25,4 +32,90 @@
 #navbar a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+#footer {
+  height: 6vh;
+  position: static;
+  background-color: #333;
+}
+
+#footer-links {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+}
+
+/*comment.html*/
+#img-container {
+  display: flex;
+  justify-content: center;
+}
+
+#comment-h1 {
+  text-align: center;
+  font-size: 75px;
+  padding-top: 50px;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+#comment {
+  width: 50%;
+  height: auto;
+}
+
+#name {
+  width: 25%;
+  height: 30px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*comment_section.html*/
+#commentsSection {
+  min-height: 100vh;
+  align-items: center;
+}
+
+#guidelines {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Listenelemente */
+#rule-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#rule-list li {
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #555;
+  text-align: left;
+}
+
+.comment-box {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
 }
