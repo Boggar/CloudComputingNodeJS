@@ -1,6 +1,14 @@
 * {
 }
 
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("./BG_Karikatur.jpg") center center / cover no-repeat;
+}
+
 /*Navbar styling*/
 #navbar {
   list-style-type: none;
@@ -25,4 +33,18 @@
 #navbar a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+.bg-info {
+  background-color: #333 !important;
+}
+
+.btn-color {
+  background-color: #333;
+  color: white;
+}
+
+.btn-color:hover {
+  background-color: #555;
+  color: white;
 }
