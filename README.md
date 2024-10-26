@@ -3,6 +3,7 @@ Cloud Computing WS24/25
 Gruppe:
 
 - Manuel Thamm, 35605
+- Kadir Acaroglu, 36371
 
 Aufgabenblatt 1:
 
