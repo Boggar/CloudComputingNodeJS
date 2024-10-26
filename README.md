@@ -11,3 +11,4 @@ Aufgabenblatt 1:
 
 1. In der Command Line folgendes eingeben: npm install
 2. Zum starten der Seite: npm start
+3. Im Browser "localhost:2000" aufrufen
